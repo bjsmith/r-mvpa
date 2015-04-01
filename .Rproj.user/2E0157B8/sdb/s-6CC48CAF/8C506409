@@ -1,0 +1,16 @@
+{
+    "contents" : "\n#' Read a brain image\n#' \n#' This function allows you to read a brain image\n#' @param file\n#' @param file.format file format the mri file is stored in. Currently only NIFTI\n#' @export\n#' @examples\n#' read.image()\n#http://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/\n\n#setwd(nwd)\n\n#require(\"fmri\")\nread.image <- function(file,dim, file.format=\"NIFTI\"){\n  if (file.format==\"NIFTI\"){\n    #package fmri\n    #img <- read.NIFTI(file) #using package fmri\n    \n    #package mritc\n    #img <- readMRI(file, dim, \"nifti\") #using package mritc\n    \n    #package oro.nifti\n    URL <- \"http://imaging.mrc-cbu.cam.ac.uk/downloads/Colin/colin_1mm.tgz\"\n    urlfile <- \"colin_1mm.tgz\"\n    if (!file.exists(urlfile)){\n      download.file(URL, dest=urlfile, quiet=TRUE)\n      untar(urlfile)\n    }\n    img <- readNIfTI(\"colin_1mm\")\n    img = cal_img(img)\n    \n    test.file <- \"/home/ben/uscdocs/PSYC599-bigdata/project/fmri-r-package/test-data/sub126-CUPSTask.nii.gz\"\n    test.file.uncompressed <- \"/home/ben/uscdocs/PSYC599-bigdata/project/fmri-r-package/test-data/sub126-CUPSTask.nii\"\n    img <- readNIfTI(test.file)#Error in performPermutation(trans, real.dimensions, data, verbose) : \n                                #Transformation is not simple, cannot reorient!\n    img <- readNIfTI(test.file.uncompressed)#Error in performPermutation(trans, real.dimensions, data, verbose) : \n                                            #Transformation is not simple, cannot reorient!\n    #OK so a lot of these packages are having problems with my nii.gz file\n    #but FSL doesn't have a problem with it!\n    \n  }else{\n    stop(paste0(\"read.image doesn't recognize the file format \", file.format))\n  }\n  return(image)\n}",
+    "created" : 1427923358330.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2986726156",
+    "id" : "8C506409",
+    "lastKnownWriteTime" : 1427926703,
+    "path" : "~/uscdocs/PSYC599-bigdata/project/fmri-r-package/code/mvpa/R/read.image.R",
+    "project_path" : "R/read.image.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

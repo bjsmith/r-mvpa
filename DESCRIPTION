@@ -1,0 +1,10 @@
+Package: mvpa
+Type: Package
+Title: What the package does (short line)
+Version: 1.0
+Date: 2015-03-29
+Author: Ben Smith
+Maintainer: Who to complain to <benjsmith@gmail.com>
+Depends: fmri, mritc, oro.nifti
+Description: More about what it does (maybe more than one line)
+License: What license is it under?

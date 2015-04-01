@@ -1,0 +1,16 @@
+{
+    "contents" : "Package: mvpa\nType: Package\nTitle: What the package does (short line)\nVersion: 1.0\nDate: 2015-03-29\nAuthor: Ben Smith\nMaintainer: Who to complain to <benjsmith@gmail.com>\nDepends: fmri, mritc, oro.nifti\nDescription: More about what it does (maybe more than one line)\nLicense: What license is it under?\n",
+    "created" : 1427925418570.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2980080230",
+    "id" : "560CEC63",
+    "lastKnownWriteTime" : 1427925491,
+    "path" : "~/uscdocs/PSYC599-bigdata/project/fmri-r-package/code/mvpa/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "dcf"
+}

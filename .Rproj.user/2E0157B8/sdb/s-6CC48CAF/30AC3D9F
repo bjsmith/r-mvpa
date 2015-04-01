@@ -1,0 +1,16 @@
+{
+    "contents" : "library(mvpa)\nimg <- read.image(\n  file = \"/home/ben/uscdocs/PSYC599-bigdata/project/fmri-r-package/test-data/sub126-CUPSTask\")\n",
+    "created" : 1427925892322.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "781709956",
+    "id" : "30AC3D9F",
+    "lastKnownWriteTime" : 1427676646,
+    "path" : "~/uscdocs/PSYC599-bigdata/project/fmri-r-package/code/mvpa/testcode/demo.R",
+    "project_path" : "testcode/demo.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

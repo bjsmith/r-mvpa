@@ -1,0 +1,16 @@
+{
+    "contents" : "#This file is called by every item in this package and loads some essential\n#packages.\n#https://github.com/STAT545-UBC/Discussion/issues/71\n#As in http://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/\nif(\"devtools\" %in% rownames(installed.packages()) == FALSE){\n  install.packages(\"devtools\")\n}\nrequire(\"devtools\")\n\nif(\"roxygen2\" %in% rownames(installed.packages()) == FALSE){\n  devtools::install_github(\"klutometis/roxygen\")\n}\nrequire(roxygen2)\n\nrequired.packages=c(#\"bnlearn\"#\"ISLR\",\"e1071\",\"MASS\",\"class\"\n                    #,\"qGrain\"#\"tree\",\"randomForest\",\"gbm\"\n                    #,\"pls\"\n                    #                    ,\"caret\"\n                    #,\"ggplot2\",\"gridExtra\",\"lubridate\"\n)\nfor (package in required.packages){\n  if(package %in% rownames(installed.packages()) == FALSE){\n    n <- readline(paste(\"Package\",package,\n                        \"required. Type 'y' and press\",\n                        \" enter to install or any other input to quit.\"))\n    if(n==\"y\"){\n      install.packages(package,dep=TRUE)\n    }else{\n      stop(paste(\"Required package\",package,\"not installed.\"))}}\n  require(package,character.only=TRUE)\n}\n\n",
+    "created" : 1427925407123.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2466991294",
+    "id" : "8DE6E24",
+    "lastKnownWriteTime" : 1427675223,
+    "path" : "~/uscdocs/PSYC599-bigdata/project/fmri-r-package/code/mvpa/R/common.R",
+    "project_path" : "R/common.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
