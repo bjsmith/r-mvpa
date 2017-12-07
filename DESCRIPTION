@@ -5,6 +5,6 @@ Version: 1.0
 Date: 2015-03-29
 Author: Ben Smith
 Maintainer: Who to complain to <benjsmith@gmail.com>
-Depends: fmri, mritc, oro.nifti
+Depends: fmri, oro.nifti, doMC, caret, abind
 Description: More about what it does (maybe more than one line)
-License: What license is it under?
+License: GPL-3

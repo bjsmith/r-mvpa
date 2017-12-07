@@ -30,3 +30,13 @@ for (package in required.packages){
   require(package,character.only=TRUE)
 }
 
+catnl <- function(text){
+  cat(text)
+  cat("\n")
+}
+verbose <- FALSE
+printv <- function(text){
+  if (verbose){
+    print(text)
+  }
+}

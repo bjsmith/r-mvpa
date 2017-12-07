@@ -3,12 +3,10 @@
 \alias{mvpa}
 \docType{package}
 \title{
-What the package does (short line)
-~~ package title ~~
+Multi-voxel pattern analysis
 }
 \description{
-More about what it does (maybe more than one line)
-~~ A concise (1-5 lines) description of the package ~~
+Provides shortcuts to streamline MVPA using the R caret package
 }
 \details{
 \tabular{ll}{
@@ -16,27 +14,20 @@ Package: \tab mvpa\cr
 Type: \tab Package\cr
 Version: \tab 1.0\cr
 Date: \tab 2015-03-29\cr
-License: \tab What license is it under?\cr
+License: \tab GPL 3.0\cr
 }
-~~ An overview of how to use the package, including the most ~~
-~~ important functions ~~
+This package streamlines testing MVPA solutions in R using caret.
+caret.train.model.list takes a list of different caret functions and trains the data on each of them, passing the result back in a single list so results can be easily compared.
 }
 \author{
-Who wrote it
+This package was authored by Ben Smith.
 
-Maintainer: Who to complain to <yourfault@somewhere.net>
-~~ The author and/or maintainer of the package ~~
+Maintainer: Ben Smith <benjsmith@gmail.com>
 }
 \references{
-~~ Literature or other references for background information ~~
 }
-~~ Optionally other standard keywords, one per line, from ~~
-~~ file KEYWORDS in the R documentation directory ~~
-\keyword{ package }
+\keyword{ mvpa }
 \seealso{
-~~ Optional links to other man pages, e.g. ~~
-~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
 }
 \examples{
-~~ simple examples of the most important functions ~~
 }
